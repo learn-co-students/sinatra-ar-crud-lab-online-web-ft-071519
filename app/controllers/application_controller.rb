@@ -37,9 +37,13 @@ class ApplicationController < Sinatra::Base
     erb :edit
   end
   
-  put "/articles/:id" do
+  put '/articles/:id' do
+    binding.pry
     @article = Article.find(params[:id])
+    
     @article.update(params)
     redirect "/articles/#{@article.id}"
   end
+  
+
 end
