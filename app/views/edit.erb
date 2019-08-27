@@ -1,4 +1,4 @@
-<form method="post" action="/articles/<%= @article.id %>">
+<form method="post" action="/articles/<%= @article.id %>/edit">
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <label for="articalewith">Articale Title</label>
   <input type="text" name="[title]" id="title" value="<%= @article.title %>"><br>
