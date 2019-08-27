@@ -1,0 +1,11 @@
+<% @articles.map do |a| %>
+    <a href="articles/<%= a.id %>">
+        <h1> Article number <%= a.id %></h1>
+        <h3> Title: <%= a.title %> </h3>
+        <p> Content: <%= a.content %> </p>
+    </a>
+<% end %>
+
+<hr>
+
+<a href="/articles/new"> Create a new article </a>
