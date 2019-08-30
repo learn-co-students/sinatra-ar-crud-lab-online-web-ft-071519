@@ -1,0 +1,9 @@
+<h1>Magazine Articles</h1>
+<ul>
+  <% @articles.each do |article| %>
+    <li><a href="/articles/<%= article.id %>">  <%= article.title %></a><br>
+    <a href="/articles/<%= article.id %>/edit"> Edit this article.</a></li>
+  <% end %>
+</ul>
+
+<p><a href="/articles/new">Add New Article</a></p>
